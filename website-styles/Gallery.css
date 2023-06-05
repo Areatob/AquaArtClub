@@ -1,0 +1,211 @@
+body {
+    margin: 0px;
+    background-color: #0c2133;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, Helvetica,
+    sans-serif;
+    align-items:center;
+    justify-content:center;
+}
+
+#mint, #roadmap, #about_us, #team, #gallery{
+    position:relative;    
+}
+#mint:after, #roadmap:after, #about_us:after, #team:after, #gallery:after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #738FA7;
+    transition: .3s;
+}
+#mint:hover:after, #roadmap:hover:after, #about_us:hover:after, #team:hover:after, #gallery:hover:after{
+    width:100%;
+}
+#mint:hover, #roadmap:hover, #about_us:hover, #team:hover, #gallery:hover{
+    color:#738FA7;
+}
+#instagram:hover, #youtube:hover, #twitter:hover, #discord:hover{
+    color:#738FA7;
+}
+
+a {
+    text-decoration: none;
+    color: white;   
+    }
+
+#logo {
+width: 70px;
+}
+#logo:hover {
+    transition: 0.5s;
+    width: 75px;
+}
+.navbar {
+color: white;
+padding: 0 10px;
+font-size: 14px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #1C172E;
+box-shadow: 2px 2px 19px 6px rgba(248, 5, 159, 0.8);
+-webkit-box-shadow: 2px 2px 19px 6px rgba(248, 5, 159, 0.8);
+-moz-box-shadow: 2px 2px 19px 6px rgba(248, 5, 159, 0.8);
+}
+
+.navbar-left div {
+text-transform: uppercase;
+font-weight: 600;
+}
+
+.navbar-left,
+.navbar-left {
+display: flex;
+align-items: center;
+}
+.navbar-left {
+display: flex;
+align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+margin: 10px;
+}
+
+.navbar-right {
+size: 70px;
+}
+h1{
+    font-family: "DM Sans";
+    margin: 0px;
+}
+
+.Main-Box{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    background-image: linear-gradient(163deg, rgb(248, 5, 159) 0%, #52008c 50%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    margin-bottom: 20px;
+}
+.Main-Box2{
+    padding: 10px;
+    background-color: #1a1a1a;
+    transition: all .2s;
+    border-radius: 20px;
+    border-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.Main-Box:hover {
+    box-shadow: 0px 0px 30px 1px rgba(248, 5, 159, 0.493);
+   }
+   
+.Main-Box2:hover {
+    transform: scale(0.999);
+    border-radius: 20px;
+   }
+.Gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Squidimg{
+    box-shadow: 1px 1px 13px 3px rgba(248, 5, 159, 0.8);
+    -webkit-box-shadow: 1px 1px 13px 3px rgba(248, 5, 159, 0.8);
+    -moz-box-shadow: 1px 1px 13px 3px rgba(248, 5, 159, 0.8);
+    border: 10px;
+    border-radius: 10px;    
+    width: 15%;
+    margin: 20px;
+}
+.Squidimg:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    outline: 5px solid #52008c;
+    box-shadow: 0px 0px 30px 1px rgba(248, 5, 159, 0.493);
+}
+h2{
+    font-size:xx-large;
+    font-family: "DM Sans";
+    color: #6F7297;
+}
+
+.glass-container1{
+    height: auto;
+    width: auto;
+    padding: 30px 45px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: #52008c;
+    backdrop-filter: blur(7px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.neon {
+    font-family: Awesome 6 Thin;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: .15em;
+    color: rgb(255, 255, 255);
+}
+.loader {
+margin-top: 2%;
+  z-index: 1000;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  top: 97%;
+  left: 50%;
+}
+
+.slider {
+  overflow: hidden;
+  background-color: #1a1a1a;
+  margin: 0 15px;
+  height: 60px;
+  width: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 1px rgba(248, 5, 159, 0.493);
+  position: relative;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 0px rgba(10, 10, 10, 0.8), 0px 420px 0 400px #0c8fe7,
+    inset 0px 0px 0px rgba(10, 10, 10, 0.4);
+  animation: animate_2 2.5s ease-in-out infinite;
+  animation-delay: calc(-0.5s * var(--i));
+}
+
+@keyframes animate_2 {
+  0% {
+    transform: translateY(250px);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(250px);
+    filter: hue-rotate(180deg);
+  }
+}
