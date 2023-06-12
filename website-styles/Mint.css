@@ -10,7 +10,6 @@ p{
 #mint, #roadmap, #about_us, #team, #gallery{
     position:relative;    
 }
-
 ::-webkit-scrollbar {
     background-color: transparent;
     border-radius: 10px;
