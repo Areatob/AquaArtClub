@@ -16,7 +16,7 @@ body {
     position: absolute;
 }
 ::-webkit-scrollbar, ::-webkit-scrollbar-thumb{
-    visibility: hidden;
+    visibility: show;
 }
 
 #mint, #roadmap, #about_us, #team {
