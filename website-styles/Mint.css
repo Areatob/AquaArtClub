@@ -10,6 +10,18 @@ p{
 #mint, #roadmap, #about_us, #team, #gallery{
     position:relative;    
 }
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:lightslategray;
+}
+::-webkit-scrollbar-corner {
+    background-color: lightslategray;
+}
+
 #mint:after, #roadmap:after, #about_us:after, #team:after, #gallery:after{
     content: '';
     position: absolute;
