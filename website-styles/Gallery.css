@@ -39,8 +39,10 @@ a {
 width: 70px;
 }
 #logo:hover {
-    transition: 0.5s;
-    width: 75px;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 .navbar {
 color: white;
